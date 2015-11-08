@@ -55,6 +55,22 @@
         {
             "type": "package",
             "package" : {
+                "name" : "wp-memcached-manager",
+                "type" : "wordpress-plugin",
+                "version" : "1.1",
+                "dist" : {
+                    "type" : "zip",
+                    "url" : "https://github.com/voravor/wp-memcached-manager/archive/master.zip"
+                },
+                "require" : {
+                    "php" : ">=5.4.0"
+                }
+            }
+
+        },
+        {
+            "type": "package",
+            "package" : {
                 "name" : "random-post-generator",
                 "type" : "wordpress-plugin",
                 "version" : "1.1",
@@ -91,6 +107,7 @@
         "fancyguy/webroot-installer": "1.0.0",
         "wpackagist-plugin/wordpress-seo": "*",
         "simple-wp" : "1.5",
+        "wp-memcached-manager": "1.1",
 
         "wpackagist-plugin/amazon-s3-and-cloudfront" : "0.9.*",
         "wpackagist-plugin/amazon-web-services" : "0.3.*",

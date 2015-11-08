@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dad90174de4a29b0ac8692316d6df219",
-    "content-hash": "3887104dc513344788f473012b0f4c4a",
+    "hash": "30f66e9e996dabed0fc183b40d207f16",
+    "content-hash": "f4ff5e936a68c17e03e83b69851bc366",
     "packages": [
         {
             "name": "composer/installers",
@@ -188,6 +188,20 @@
                 "fancyguy/webroot-installer": "1.0.0"
             },
             "type": "webroot"
+        },
+        {
+            "name": "wp-memcached-manager",
+            "version": "1.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/voravor/wp-memcached-manager/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "wordpress-plugin"
         },
         {
             "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
