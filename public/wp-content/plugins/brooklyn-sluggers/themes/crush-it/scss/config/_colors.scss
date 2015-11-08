@@ -1,0 +1,75 @@
+$white       : #FFFFFF;
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$vapor       : #F6F6F6;
+$white-smoke : #F5F5F5;
+$silver      : #EFEFEF;
+$smoke       : #EEEEEE;
+$gainsboro   : #DDDDDD;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$aluminum    : #999999;
+$jumbo       : #888888;
+$monsoon     : #777777;
+$steel       : #666666;
+$charcoal    : #555555;
+$tuatara     : #444444;
+$oil         : #333333;
+$jet         : #222222;
+$black       : #000000;
+
+$icon-gray   : #858584;
+
+$bs-red      : #84001B;
+$bs-dark     : #4A4A4A;
+$bs-light    : #9B9B9B;
+$bs-orange	 : #FFD253;
+
+$fb-blue     : #3b5998;
+$tw-blue     : #4099ff;
+$lnkin-blue  : #0077b5;
+$email-blue  : #0066dd;
+
+$primary-color: #008CBA;
+$secondary-color: #e7e7e7;
+$alert-color: #f04124;
+$success-color: #43AC6A;
+$warning-color: #f08a24;
+$info-color: #a0d3e8;
+
+$email-grey: #C6C6C6;
+$gplus-orange: #DD4B39;
+$pinterest-red: #CC2127;
+
+
+
+
+.icon-grey {
+    color: $iron !important;
+}
+
+.fb-blue {
+    color: $fb-blue !important;
+}
+.fb-blue-bg {
+    background-color: $fb-blue !important;
+}
+
+.twitter-blue {
+    color: $tw-blue !important;
+}
+.twitter-blue-bg {
+    background-color: $tw-blue !important;
+}
+
+.linked-in-blue {
+    color: $lnkin-blue !important;
+}
+
+.linkedin-blue-bg {
+    background-color: $lnkin-blue !important;
+}
+
+.email-blue {
+    background-color: $email-blue;
+}

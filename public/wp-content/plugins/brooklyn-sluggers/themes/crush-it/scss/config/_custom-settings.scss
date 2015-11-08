@@ -1,0 +1,51 @@
+
+/* 1. MIXINS/IMPORTS/INCLUDES */
+@import "../../bower_components/foundation/scss/foundation/components/global";
+@import "../../bower_components/foundation/scss/foundation/components/buttons";
+@import "../../bower_components/foundation/scss/foundation/components/forms";
+
+@import "breakpoints";
+
+/* 2. GLOBAL VARIABLES */
+@import "colors";
+
+/* 3. FONTS */
+@import "fonts";
+
+/* 4. FORMS */
+@import "forms";
+
+/* 5. RESET and UTILITY CLASSES */
+@import "utility";
+
+/* 6. LAYOUT */
+@import "layout";
+
+/*** 7. TOPBAR, NAV, and TABBAR ***/
+@import "top";
+
+/*** 8. CONTENT ***/
+@import "content";
+@import "homepage";
+
+/*** 9. FOOTER ***/
+@import "footer";
+
+/*** 10. DROPDOWNS, FLYOUTS AND POPUPS ***/
+@import "popups";
+
+
+/*** 12 EFFECTS ***/
+@import "effects";
+
+/*** 13 SOCIAL ***/
+@import "social";
+
+
+/*** 15 NAV ***/
+@import "navigation";
+
+
+
+
+    

@@ -1,0 +1,204 @@
+@import "fonts";
+@import "colors";
+
+::-webkit-input-placeholder {
+   color: $iron;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $iron;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $iron; 
+}
+
+:-ms-input-placeholder {  
+   color: $iron;
+}
+
+$input-font-family: $font-family-sans-serif;
+$input-font-color: $black;
+$input-font-size: rem-calc(14);
+$input-bg-color: $iron;
+$input-border-radius: 20;
+
+input.round-input {
+    height: 50px !important;
+    font-weight: 500 !important;
+    
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    
+     -o-transition:all .1s linear; 
+    -moz-transition:all .1s linear; 
+    -webkit-transition:all .1s linear;
+    z-index:10;
+}
+
+.rounded-button {
+    height: 50px !important;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    
+}
+
+
+
+.validationElement {
+  //border: 0px solid red !important;
+}
+
+
+::-webkit-input-placeholder::after {
+    content: "to receive the Heleo Newsletter";
+    
+    @media only screen and (max-width: 410px) {
+        color:#666;
+        content:"for updates";
+    }
+    
+    @media #{$iphone5} {
+        color:#666;
+        content:"to receive updates";
+    }
+
+}
+
+.signup-success {
+  border-radius: 4px;
+  background-color: $iron;
+  height: 50px;
+  font-family: $font-family-sans-serif;
+  color: $white;
+  line-height: 1;
+  font-size: rem-calc(18);
+  padding-top: 10px;
+  margin-bottom: 26px;
+
+  &:before {
+    content: 'I';
+    font-family: helium;
+    position: relative;
+    top: 4px;
+    font-size: rem-calc(24);
+    left: -20px;
+  }
+
+}
+.signup-form {
+    
+    .heleo-module & {
+        margin: rem-calc(60) auto;
+    }
+
+    .sharebox & {
+        margin-top: rem-calc(60);
+    }
+
+    h3.signup-instructions {
+        color: $bs-red;
+
+        .heleo-module &, footer#footer & {
+            color: $iron;
+        }
+
+        font-family: $font-family-sans-serif;
+        font-size: rem-calc(30);
+        //padding-top: rem-calc(70);
+        
+        @media #{$small-only} {
+            font-size: rem-calc(22);
+        }
+        
+        @media #{$iphone5}, #{$iphone-old} {
+            font-size: rem-calc(30);
+        }
+    
+    }
+    
+    form {
+
+        text-align: center;
+        display: inline-block;
+        
+        @media #{$medium} {
+          //  top: rem-calc(0);   
+        }
+        
+        input.email {
+            font-size: rem-calc(18);
+            font-family: $font-family-sans-serif;
+            font-weight: 300 !important;
+            width: rem-calc(400) !important;
+
+            .heleo-module & {
+                background-color: $bs-light;
+
+                &:focus {
+                    background-color: $iron;
+                }
+            }
+
+            .sharebox &, .pushdown &, .top-rail &, .popup &{
+                width: rem-calc(500) !important;
+            }
+
+            float: left;
+
+            @media #{$small-only} {
+                width: rem-calc(340) !important;
+                font-size: rem-calc(15) !important;
+            }
+            
+            @media only screen and (max-width: 410px) {
+                width: rem-calc(200) !important;
+            }
+            
+            @media #{$iphone5}, #{$iphone-old} {
+                width: 100% !important;
+            }
+
+        }
+        
+        button.disabled {
+            opacity: 1 !important;
+        }
+        
+        button.signup {
+            float:left;
+            margin-left: 5px;
+            font-family: $font-family-sans-serif;
+            font-size: rem-calc(18);
+            background-color: $bs-red;
+            font-weight: 300;
+            width: rem-calc(145);
+
+            .sharebox &, .pushdown &, .top-rail &, .popup & {
+                width: rem-calc(140);
+            }
+            
+            -o-transition:all .1s linear; 
+            -moz-transition:all .1s linear; 
+            -webkit-transition:all .1s linear;
+            
+            &:hover {
+                background: rgba(0,0,0,0.2);
+            }
+            
+            @media #{$small-only} {
+                width: rem-calc(150);
+                font-size: rem-calc(16);
+                
+            }
+            
+            @media #{$iphone5}, #{$iphone-old} {
+                float: none;
+            }
+        }
+    }
+}

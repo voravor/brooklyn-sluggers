@@ -1,0 +1,349 @@
+@import "mixins";
+
+$transition-speed:  0.3s;
+$easing:            ease-in-out;
+
+ul.share-list {
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    float: right;
+    list-style-type: none;
+    vertical-align: middle;
+
+    
+    li {
+        
+        display: inline;
+
+        .share-button {
+            font-family: FontAwesome !important;
+            padding: 8px 30px 8px 24px !important;
+
+            &:before {
+                font-size: 28px;
+            }
+            
+            &:after {
+                position: relative;
+                top: -6px;
+                left: 5px;
+            }
+            
+            @media #{$medium-only} {
+               // padding: rem-calc(8) rem-calc(20) !important;
+               padding: 8px 24px 8px 20px !important;
+            }
+
+        }
+       
+        .share-button-fb {
+            $padding: $button-tny;
+            $bg: $fb-blue;
+
+            $radius: 4px;
+        
+            $button-font-tny: rem-calc(12);
+            $button-margin-bottom: rem-calc(25);
+            $button-function-factor: 50%;
+            $button-font-color: $white;
+            $button-font-color-alt: $white;
+            
+            @include button($padding, $bg, $radius);
+            
+            &:before {
+                content: "\f09a";
+            }
+            
+            &:after {
+                font-family: $font-family-sans-serif;
+                content: " ";
+                
+            }
+
+            &:hover {
+                background-color: $fb-blue;
+                opacity: 0.8;
+            }
+
+            @media #{$large-up} {
+                &:after {
+                    content: " Facebook";   
+                }
+            }
+        }
+        
+        .share-button-twitter { 
+            $padding: $button-tny;
+            $bg: $tw-blue;
+            $radius: 4px;
+        
+            $button-font-tny: rem-calc(12);
+            $button-margin-bottom: rem-calc(25);
+            $button-function-factor: 50%;
+            $button-font-color: $white;
+            $button-font-color-alt: $white;
+            
+            @include button($padding, $bg, $radius);
+            
+            &:before {
+                content: "\f099";
+            }
+            
+             &:after {
+                font-family: $font-family-sans-serif;
+                content: " ";   
+            }
+
+            &:hover {
+                background-color: $tw-blue;
+                opacity: 0.8;
+            }
+            
+            @media #{$large-up} {
+                &:after {
+                    content: " Twitter";   
+                }
+            }
+        }
+        
+        
+    }
+}
+
+
+footer ul.share-menu {
+    
+    list-style: none;
+    font-size: rem-calc(40);
+    margin-left: 0;
+    
+    li {
+        display: inline;
+        padding-right: 20px;
+        
+        @media #{$small-only} {
+            padding-right: 40px;
+        }
+        
+        a {
+            &:hover:before {
+                color: $bs-light;
+            }
+
+            @media #{$small-only} {
+                font-size: rem-calc(40);
+            }
+        }
+    }
+    
+}
+$include-html-reveal-classes: $include-html-classes;
+
+// We use these to control the style of the reveal overlay.
+$reveal-overlay-bg: rgba($black, .9);
+$reveal-overlay-bg-old: $black;
+
+// We use these to control the style of the modal itself.
+$reveal-modal-bg: $white;
+$reveal-position-top: rem-calc(100);
+$reveal-default-width: 80%;
+$reveal-modal-padding: rem-calc(20);
+$reveal-box-shadow: 0 0 10px rgba($black,.4);
+
+// We use this to set the default radius used throughout the core.
+$reveal-radius: $global-radius;
+$reveal-round: $global-rounded;
+
+// We use these to control the modal border
+$reveal-border-style: solid;
+$reveal-border-width: 1px;
+$reveal-border-color: $bs-red;
+
+$reveal-modal-class: "reveal-modal";
+$close-reveal-modal-class: "close-reveal-modal";
+
+.reveal-modal {
+    @media #{$small-only} {
+        
+       // position: absolute !important;
+        top: 210px !important;
+       // width: 80% !important;
+       // margin: 0 auto !important;
+       min-height: auto !important;
+    }
+    
+    @media #{$medium-only} {
+        top: 100px !important;
+    }
+}
+
+
+
+
+
+a.signup-button {
+    @include postfix($bs-red, $bs-red, false);
+    
+    $button-bg-hover: yellow;
+    height: 30px !important;
+    line-height: normal;
+    padding-top: 6px !important;
+    border-top-left-radius: 1000px !important;
+    border-bottom-left-radius: 1000px !important;
+    margin-left: rem-calc(-50);
+    
+    &:hover {
+        background-color: scale-color($bs-red, $lightness: 30%);
+    }
+
+}
+
+
+
+
+.post-share-button {
+    $padding: $button-tny;
+    $button-border-width: 0px;
+    $button-border-style: solid;
+    $bg: $primary-color;
+    $radius: 15px;
+    $full-width: false;
+    $disabled: false;
+    $is-input: false;
+    $button-font-tny: rem-calc(10);
+    $button-margin-bottom: rem-calc(25);
+    $button-function-factor: 30%;
+    @include button($padding, $bg, $radius, $full-width, $disabled, $is-input); 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: rem-calc(9);
+    padding-bottom: rem-calc(9);
+    vertical-align: bottom  ;
+    
+    &:hover {
+        background-color: scale-color($bs-light, $lightness: -30%) !important;
+    }
+}
+    
+.tab-bar-social {
+    position: relative;
+   // top: 150px;
+    right: 200px;
+    z-index: 1000;
+    list-style: none;
+
+    @include x-transition();
+    
+    li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 9px;
+        padding: 5px 0px 5px 0px;
+        /* border: 1px solid #4A4A4A; */
+        background-color: #9b9b9b;
+        border-radius: 4px;
+        width: 42px;
+        height: 42px;
+        text-align: center;
+        
+        a {
+            color: $white !important;
+
+            i {
+                font-size: 32px;
+                line-height: 1;
+            }
+
+        }
+
+        a:hover {
+            color: $bs-red !important;
+        }
+    }
+        
+}
+
+
+
+.sharebox {
+    width: 100%;
+    height: rem-calc(200);
+    color: $iron;
+    background-color: $white;
+    position: absolute;
+    top: 0;
+    z-index:10000;
+
+    //border-bottom: 1px solid rgba($iron, 0.4);
+    box-shadow: 3px 3px 3px rgba($iron, 0.8);
+
+
+    .follow-us {
+
+        display: inline-block;
+        margin-bottom: 20px;
+        width: rem-calc(325);
+        border: 1px solid $bs-light;
+        border-radius: 4px;
+        height: rem-calc(40);
+
+
+        @include headings {
+            display: inline-block;
+            float: left;
+            font-size: 18px;
+            padding: 8px 0px 9px 16px;
+            line-height: 1;
+        }
+
+        ul {
+            position: relative;
+            top: 10px;
+            list-style-type: none;
+            float: right;
+            display: inline-block;
+            padding-right: 10px;
+
+            li {
+                display: inline-block;
+            }
+        }
+    }
+
+}
+
+.pushdown {
+    display: block;
+    background-color: $bs-light;
+    height: rem-calc(90);
+    clear: both;
+    
+}
+
+.top-rail {
+    border-bottom: 1px solid $iron;
+    background-color: $bs-light;
+    height: 140px;
+    color: $iron;
+    font-family: $font-family-sans-serif;
+
+    .icon-close {
+        position: absolute;
+        right: 10px;
+    }
+}
+
+
+.icon-close {
+    padding: 10px;
+    color: $black;
+
+    &:hover {
+        color: rgba($black, 0.5);
+    }
+}
+    
+
+
+

@@ -1,0 +1,34 @@
+{
+  "name": "dashicons",
+  "version": "3.9.1",
+  "authors": [
+    "Mattia Migliorini <deshack@ubuntu.com>"
+  ],
+  "description": "Unofficial mirror of WordPress Dashicons icon fonts.",
+  "main": "css/dashicons.css",
+  "keywords": [
+    "icons",
+    "fonts",
+    "dashicons",
+    "wordpress",
+    "css"
+  ],
+  "license": "GPLv2+",
+  "homepage": "http://melchoyce.github.io/dashicons/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "3.9.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.9.1",
+    "commit": "52e47b4e3f015f980df1320d1f2039764fd62615"
+  },
+  "_source": "git://github.com/deshack/dashicons.git",
+  "_target": "~3.9.*",
+  "_originalSource": "dashicons"
+}

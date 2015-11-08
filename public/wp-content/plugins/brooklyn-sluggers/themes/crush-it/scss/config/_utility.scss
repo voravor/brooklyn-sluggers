@@ -1,0 +1,97 @@
+@import "colors";
+
+.full-width-row {
+    width:100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100% !important;
+}
+
+.border {
+    border: 1px solid red !important;
+}
+
+.circular {
+    border-radius: 50%;
+    box-shadow: 0 0 3px #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.icon {
+    font-size: rem-calc(16);
+    color: $jet;
+}
+
+.border-right {
+    border-right: 1px solid silver;   
+}
+
+.border-left {
+    border-left: 1px solid green;
+}
+
+.rounded-div {     
+    border-radius: rem-calc(20);
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+*:focus {
+    outline: 0;
+}
+
+
+//HVR
+    /* Float */
+.hvr-float{
+    header &, footer & {
+        display: inline-block !important;
+        vertical-align: middle;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+}
+
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active{
+    header &, footer & {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+}
+
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+

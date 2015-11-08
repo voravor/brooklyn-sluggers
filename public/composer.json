@@ -1,0 +1,145 @@
+{
+    "name": "Brooklyn Sluggers",
+    "description": "Brookly Sluggers Composer File",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://wpackagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "wordpress",
+                "type": "webroot",
+                "version": "4.3.1",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/WordPress/WordPress/archive/4.3.1.zip"
+                },
+                "require" : {
+                    "fancyguy/webroot-installer": "1.0.0"
+                }
+            }
+        },
+        {
+            "type" : "package",
+            "package" : {
+                "name" : "wordpress-test",
+                "type" : "package",
+                "version" : "2.2",
+                "dist" : {
+                    "type" : "zip",
+                    "url" : "https://github.com/nb/wordpress-tests/archive/master.zip"
+                },
+                "require" : {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package" : {
+                "name" : "simple-wp",
+                "type" : "wordpress-muplugin",
+                "version" : "1.5",
+                "dist" : {
+                    "type" : "zip",
+                    "url" : "https://github.com/voravor/simple-wp/archive/master.zip"
+                },
+                "require" : {
+                    "php" : ">=5.4.0"
+                }
+            }
+
+        },
+        {
+            "type": "package",
+            "package" : {
+                "name" : "random-post-generator",
+                "type" : "wordpress-plugin",
+                "version" : "1.1",
+                "dist" : {
+                    "type" : "zip",
+                    "url" : "https://github.com/voravor/random-post-generator/archive/master.zip"
+                },
+                "require" : {
+                    "php" : ">=5.4.0"
+                }
+            }
+
+        },
+        {
+            "type" : "package",
+            "package" : {
+                "name" : "wordpress-admin-style",
+                "type" : "wordpress-plugin",
+                "version" : "dev-master",
+                "dist"  : {
+                    "type" : "zip",
+                    "url" : "https://github.com/bueltge/WordPress-Admin-Style/archive/master.zip"
+                },
+                "require" : {
+                    "php" : ">=5.4.0"
+                }
+            }
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "ext-gd": "*",
+        "wordpress": "4.3.1",
+        "fancyguy/webroot-installer": "1.0.0",
+        "wpackagist-plugin/wordpress-seo": "*",
+        "simple-wp" : "1.5",
+
+        "wpackagist-plugin/amazon-s3-and-cloudfront" : "0.9.*",
+        "wpackagist-plugin/amazon-web-services" : "0.3.*",
+
+        "wpackagist-plugin/memcached-redux" : "0.1.*",
+        "wpackagist-plugin/batcache" : "1.*",
+
+        "wpackagist-plugin/hide-my-site": "1.5",
+
+
+        "random-post-generator": "1.*",
+        
+        "wpackagist-plugin/wordpress-importer": "*",
+        "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
+        "wpackagist-plugin/google-sitemap-generator" : "*",
+        "wpackagist-theme/twentyfifteen" : "*",
+        "wpackagist-plugin/mailchimp-for-wp" : "2.*",
+       
+        "wpackagist-plugin/visual-biography-editor" : "1.4",
+        "wpackagist-plugin/regenerate-thumbnails" : "2.*",
+        "wpackagist-plugin/force-regenerate-thumbnails": "2.*",
+        
+        "wpackagist-plugin/imagefocuspoint": "*"
+
+    },
+    "require-dev" : {
+        "wpackagist-plugin/log-deprecated-notices"              : "*",
+        "wpackagist-plugin/debug-bar" : "0.8.*",
+        "wpackagist-plugin/debug-bar-console"                   : "*",
+	    "wpackagist-plugin/user-switching"                      : "*",
+	    "wpackagist-plugin/simply-show-ids"                     : "*",
+        "wordpress-test"                                        : "2.2",
+        "sauce/sausage": ">=0.6",
+        "sauce/connect": ">=3.0",
+        "wordpress-admin-style"               : "dev-master",
+        "wpackagist-plugin/database-sync": "0.5",
+        "wpackagist-theme/twentyeleven" : "*",
+        "wpackagist-theme/twentytwelve" : "*",
+        "wpackagist-theme/twentythirteen" : "*",
+        "wpackagist-theme/twentyfourteen" : "*",
+        "wpackagist-theme/twentyfifteen" : "*",
+        "wpackagist-plugin/check-email" : "*",
+        "wpackagist-plugin/user-activation-email" : "*"
+    },
+    "extra": {
+        "webroot-dir": "wordpress",
+        "webroot-package": "wordpress",
+        "installer-paths": {
+            "test/{$name}": ["nb/wordpres-tests"]
+        }
+    }
+}

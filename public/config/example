@@ -1,0 +1,49 @@
+<?php
+
+if(ENVIRONMENT=='development') {
+    
+//get your own salts at: https://api.wordpress.org/secret-key/1.1/salt/
+    //can't help with peppers
+    $config['auth_key']            = 'asd;flkjasdf;lkajsdf;lkj***SAMPLE***asd;lfkjasdflkjsdlfkjsdflkjs';
+    $config['secure_auth_key']     = 'asd;flkjasdf;lkajsdf;lkj***SAMPLE***asd;lfkjasdflkjsdlfkjsdflkjs';
+    $config['logged_in_key']       = 'asd;flkjasdf;lkajsdf;lkj***SAMPLE***asd;lfkjasdflkjsdlfkjsdflkjs';
+    $config['nonce_key']           = 'asd;flkjasdf;lkajsdf;lkj***SAMPLE***asd;lfkjasdflkjsdlfkjsdflkjs';
+    $config['auth_salt']           = 'asd;flkjasdf;lkajsdf;lkj***SAMPLE***asd;lfkjasdflkjsdlfkjsdflkjs';
+    $config['secure_auth_salt']    = 'asd;flkjasdf;lkajsdf;lkj***SAMPLE***asd;lfkjasdflkjsdlfkjsdflkjs';
+    $config['logged_in_salt']      = 'asd;flkjasdf;lkajsdf;lkj***SAMPLE***asd;lfkjasdflkjsdlfkjsdflkjs';
+    $config['nonce_salt']          = 'asd;flkjasdf;lkajsdf;lkj***SAMPLE***asd;lfkjasdflkjsdlfkjsdflkjs';
+
+    //local
+    $config['database_host'] = 'nowhere.dev';
+    $config['database_name'] = 'none';
+    $config['database_user'] = 'unknown';
+    $config['database_pass'] = 'blank';
+    
+    //optional
+    //  $config['database_slaves'] = array(
+    //      array(
+    //          'database_host' => '192.168.10.x',
+    //          'database_user' => 'someone',
+    //          'database_pass' => 'somepassword'
+    //      )
+    //      
+    //  );    
+
+    //optional
+    //$config['memcached_servers'] = array('127.0.0.1');
+    
+    //api
+   //    $config['api_url'] = 'http://localhost.dev:1337’;
+    
+    //cloudfront and s3
+    $config['cdn_css_url']      = 'http://cdn2.nowhere.com';
+    $config['cdn_js_url']       = 'http://cdn3.nowhere.com';
+    $config['cdn_img_url']      = 'http://cdn4.nowhere.com';
+    $config['cdn_misc_url']     = 'http://cdn1.nowhere.com';
+    
+    $config['aws_access_key_id']       = 'RIDICULOUSKEY/@#$(*&';
+    $config['aws_secret_access_key']   = 'RIDICULOUSSECRET/@#($*&@#($*&@#($*&';
+    
+
+    
+}

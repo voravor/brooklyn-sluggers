@@ -1,0 +1,32 @@
+@import "colors";
+
+$font-family-sans-serif: "Ubuntu", Helvetica, Roboto, Arial, sans-serif;
+$font-family-serif: "Merriweather", serif;
+$font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
+$font-weight-normal: 400 !default;
+$font-weight-bold: bold !default;
+
+$body-bg: $white;
+$body-font-color: $jet;
+$body-font-family: $font-family-sans-serif;
+$body-font-weight: $font-weight-normal;
+$body-font-style: normal;
+
+$header-font-weight: 300;
+$header-text-rendering: optimizeLegibility;
+
+// $h1-font-size: rem-calc(44);
+// $h2-font-size: rem-calc(24);
+// $h3-font-size: rem-calc(16);
+// $h4-font-size: rem-calc(23);
+// $h5-font-size: rem-calc(18);
+// $h6-font-size: 1rem;
+
+// We use these to control header size reduction on small screens
+// $h1-font-reduction: rem-calc(10) !default;
+// $h2-font-reduction: rem-calc(10) !default;
+// $h3-font-reduction: rem-calc(5) !default;
+// $h4-font-reduction: rem-calc(5) !default;
+// $h5-font-reduction: 0 !default;
+// $h6-font-reduction: 0 !default;
+

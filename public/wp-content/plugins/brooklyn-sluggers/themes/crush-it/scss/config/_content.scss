@@ -1,0 +1,178 @@
+
+@import "colors";
+@import "mixins";
+@import "../../bower_components/foundation/scss/foundation/components/buttons";
+
+
+article {
+
+    p {
+        font-weight: 300;
+    }
+
+   
+    div.content-container {
+        padding-top: rem-calc(200);
+        
+        header {
+
+            h1.post-title {
+                font-size: rem-calc(60);
+                line-height: rem-calc(60);
+                color: $bs-light;
+                
+                
+                @media #{$medium-only} {
+                    font-size: rem-calc(44);
+                    line-height: rem-calc(44);
+                }
+                
+                @media #{$small-only} {
+                    font-size: rem-calc(50);
+                    line-height: rem-calc(62);
+                    text-align: center;
+                    margin-top: rem-calc(100);
+                    margin-bottom: rem-calc(20);
+                   
+                }                
+            }
+            
+            .post-subtitle {
+                p {
+                    font-family: $font-family-sans-serif;
+                    font-weight: 300;
+                    font-size: rem-calc(20);
+                    color: $bs-light;
+ 
+                }
+            }
+
+            p.byline {
+                font-size: rem-calc(12);
+                font-family: $font-family-sans-serif;
+                padding-top: 6px;
+                color: $bs-light;
+                
+                a.author-meta {
+                    color: $oil; 
+                    font-weight: normal;
+                    
+                    &:after {
+                        content: "|";
+                        font-weight: 300;
+                        color: $bs-light;
+                        
+                    }
+                }
+                
+                time {
+                    color: $bs-light;
+                }
+                
+                @media #{$small-only} {
+                    font-size: rem-calc(22);
+                    text-align: center;
+                    padding-top: 0;
+                
+                }
+            }
+            
+            .post-share {
+                position: relative;
+                left: rem-calc(-30);
+                top: rem-calc(-10);
+                
+                @media #{$small-only} {
+                    position: static;
+                    text-align: center;
+                }
+            }
+        }
+        
+        .main-photo {
+            
+            img {
+                min-width: 100% !important;
+            }
+        }
+        
+        .photo-caption {
+            padding-right: rem-calc(20);
+            font-family: $font-family-sans-serif;
+            font-size: rem-calc(14);
+        }
+        
+        .post-content  {
+            padding-top: 15px;
+            font-weight: 300;
+            font-family: $font-family-sans-serif;
+            
+            @media #{$large-only} {
+                .small-centered {
+                    float: left !important;
+                }
+            }
+            
+            .post-body {
+                font-weight: 300;
+                padding-top: rem-calc(40);
+                padding-left: 2%;
+                //padding-right: 2%
+                max-width: rem-calc(600);
+                width: 50%;
+                
+                
+                
+                * {
+                    font-family: $font-family-serif;
+                    font-size: rem-calc(16);
+                    color: $oil;
+                    font-weight: 300;
+                    line-height: rem-calc(32);
+                }
+                
+                li, dt {
+                    font-weight: 600;
+                }
+
+            }
+
+            .sidebar {
+
+                display: block;
+                font-size: rem-calc(14);
+                max-width: rem-calc(300);
+                float: left;
+                width: 25%;
+                padding-left: 7%;
+                
+                @media #{$medium-only} {
+                    width: 33%;   
+                }
+                
+                @media #{$small-only} {
+                    display: none;
+                }
+
+            }
+            
+            p, p *, ul, li, dl {
+                
+                line-height: rem-calc(34);
+                font-size: rem-calc(18);
+
+            }
+        }
+    }
+    
+    footer {
+        clear: both;
+            
+        > h3 {
+            
+            font-size: rem-calc(18);
+            font-weight: 400 !important;
+        }
+    }
+}
+

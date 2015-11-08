@@ -1,0 +1,45 @@
+@import "colors";
+
+footer#footer {
+    //position: fixed;
+    //bottom: 0px;
+    background-color: $bs-light;
+    width: 100%;
+    height: rem-calc(50);
+
+    font-family: $font-family-sans-serif;
+    font-size: rem-calc(16);
+    font-weight: 300;
+    color: $bs-red;
+    text-align: center;
+
+    nav { 
+        ul {
+            list-style: none !important;           
+            display: table;
+            width: 100%;
+
+            li {
+                display: table-cell;
+                width: 25%;
+                
+                a {
+                    color: $bs-red;
+                    font-size: rem-calc(24);
+                    font-weight: bold;
+                    text-transform: uppercase;
+                                        
+                }
+                
+                a:hover {
+                    color: $bs-orange;
+                }
+            }
+
+        }  
+    }                         
+
+}
+
+     
+

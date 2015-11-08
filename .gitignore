@@ -1,0 +1,53 @@
+#################
+## Custom
+#################
+
+.vagrant
+
+*.template
+
+misc/*
+
+# annoyances
+**/.DS_Store/**
+
+# IDE
+*.komodoproject
+.komodotools
+
+# SASS
+**/.sass-cache/**
+.sass-cache 
+*.sass-cache*
+**/.sass-cache/*
+
+# npm, node
+node_modules
+**/node_modules/**
+node_modules/*
+**/node_modules
+
+#
+public/vendor/
+!public/wp-content/plugins/helium/themes/*/js/vendor/
+!public/wp-content/plugins/helium/themes/*/js/vendor/*
+bin/*
+public/config/*.php
+public/wordpress/*
+public/wp-content/backup/*
+public/wp-content/cache/*
+public/wp-content/plugins/*
+public/wp-content/themes/*
+
+!public/wp-content/plugins/brooklyn-sluggers/
+!public/wp-content/plugins/brooklyn-sluggers/*
+public/wp-content/upgrade/*
+public/wp-content/uploads/*
+public/wp-content/mu-plugins/*
+!public/wp-content/mu-plugins/bedrock-autoloader.php
+
+bs.css
+bs.css.map
+
+# sauce
+sauce_connect.log
